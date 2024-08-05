@@ -59,11 +59,12 @@ Shader "URPTraining/URPBasic"
 
 				return o;
 			}
-
+			half4 _ColorVar;
 			//«»ºø ºŒ¿Ã¥ı
 			half4 frag(VertexOutput i) : SV_TARGET
 			{
-				return half4(0.5, 0.5, 0.5, 1);
+				//return half4(0.5, 0.5, 0.5, 1);
+				return _ColorVar;
 			}
 
 			ENDHLSL
